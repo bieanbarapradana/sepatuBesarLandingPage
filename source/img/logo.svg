@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249 53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e4e7e8;
+        font-size: 40px;
+        font-family: SegoeUI-Light, Segoe UI;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="SEPATUBESAR" class="cls-1" transform="translate(0 43)"><tspan x="0" y="0">SEPATU</tspan><tspan class="cls-2" y="0">BESAR</tspan></text>
+</svg>
