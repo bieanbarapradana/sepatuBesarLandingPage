@@ -1,0 +1,40 @@
+#features img
+  height: 80px
+  width: 100px
+
+#features
+  background: #f9f9f9
+  text-align: center
+  position: relative
+  height: 600px
+  &:after
+      bottom: 0
+      position: absolute
+      background: inherit
+      content: " "
+      height: 100%
+      left: 0
+      right: 0
+      transform: skewY(-10deg)
+      transform-origin: 100% 
+      z-index: -1
+  
+h2
+    margin: 80px 0
+
+.cards
+  display: grid
+  grid-template-columns: repeat(3, auto)
+  grid-gap: 30px
+
+.featured-card
+  background: white
+  padding: 30px 40px 10px 40px
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2)
+
+.delivery
+  border-top: 3px solid $oceangreen
+.package
+  border-top: 3px solid $orangedeep
+.return
+  border-top: 3px solid $mercury
