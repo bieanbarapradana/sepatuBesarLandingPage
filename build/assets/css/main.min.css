@@ -247,7 +247,7 @@ a {
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #F012BE; }
+    color: #F87F43; }
 
 ::selection {
   background: #FFF498; }
@@ -326,6 +326,47 @@ hr {
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
+
+.main-nav {
+  display: flex; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto; }
+  .main-nav a {
+    color: white;
+    display: block;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease; }
+  .main-nav a:hover, .main-nav a:active {
+    color: #F87F43; }
+
+a.download {
+  background: white;
+  color: #00B2A5;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.4); }
+
+#brands ul {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  margin: 0;
+  padding: 20px 0;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 60px; }
+  @media only screen and (max-width: 550px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+
+li {
+  list-style: none; }
+
+li img {
+  width: 100%; }
 
 #features img {
   height: 80px;
@@ -437,6 +478,15 @@ p {
 .google:before {
   content: url("../img/play.png"); }
 
+#footer {
+  text-align: center;
+  padding: 60px 0; }
+  #footer li {
+    list-style: none; }
+    #footer li a {
+      padding: 0 20px;
+      text-transform: uppercase; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -470,41 +520,3 @@ p {
   #header h1 {
     color: white;
     margin-bottom: 20px; }
-
-.main-nav {
-  display: flex; }
-  .main-nav li {
-    list-style: none; }
-  .main-nav li:first-child {
-    margin-right: auto; }
-  .main-nav a {
-    color: white;
-    display: block;
-    padding: 15px 50px;
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase; }
-
-a.download {
-  background: white;
-  color: #00B2A5;
-  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.4); }
-
-#brands ul {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  margin: 0;
-  padding: 20px 0;
-  background: white;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-gap: 60px; }
-  @media only screen and (max-width: 550px) {
-    #brands ul {
-      grid-template-columns: repeat(3, auto); } }
-
-li {
-  list-style: none; }
-
-li img {
-  width: 100%; }
