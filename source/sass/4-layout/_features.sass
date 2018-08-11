@@ -7,6 +7,8 @@
   text-align: center
   position: relative
   height: 600px
+  @media only screen and (max-width: 680px)
+    height: auto
   &:after
       bottom: 0
       position: absolute
@@ -26,6 +28,8 @@ h2
   display: grid
   grid-template-columns: repeat(3, auto)
   grid-gap: 30px
+  @media only screen and (max-width: 680px)
+    grid-template-columns: repeat(1, auto)
 
 .featured-card
   background: white
