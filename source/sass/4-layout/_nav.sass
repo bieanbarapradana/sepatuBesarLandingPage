@@ -1,10 +1,19 @@
 .main-nav
   display: flex
+  margin-top: 20px
+  padding: 0
+  transition: all 0.2s ease
+
+  li.logo
+    margin-right: auto
+    padding: 10px 0
+    a
+      padding: 0
 
   li
     list-style: none
-  li:first-child
-    margin-right: auto
+    display: inline-block
+  
   a
     color: white
     display: block
@@ -13,27 +22,47 @@
     font-weight: 700
     text-transform: uppercase
     transition: all 0.2s ease
+
   a:hover, a:active
     color: $orangedeep
 
-a.download
-  background: white
-  color: $oceangreen
-  box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.4)
+  a.download
+    background: white
+    color: $oceangreen
+    box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.4)
+    margin-left: 25px
 
-#brands ul
-  -webkit-filter: grayscale(100%)
-  filter: grayscale(100%)
-  margin: 0
-  padding: 20px 0
-  background: white
-  display: grid
-  grid-template-columns: repeat(6, auto)
-  grid-gap: 60px
-  @media only screen and (max-width: 550px)
-    grid-template-columns: repeat(3, auto)
+li.nav-toggle
+  display: none
+  a
+    padding-right: 0
 
-li
-  list-style: none
-li img
-  width: 100%
+//Responsive Nav Style
+@media screen and (max-width: 750px)
+  li.nav-toggle
+    display: block
+    z-index: 100
+  .responsive-nav
+    display: none
+  .responsive-nav.unfold
+    display: block
+    width: 100%
+    background: #1f1f1f
+    position: absolute
+    top: 0
+    right: 0
+  .responsive-nav.unfold li
+    display: block
+  .responsive-nav.unfold a
+    padding: 40px
+    display: block
+    text-align: center
+  .responsive-nav.unfold a:hover
+    transform: translate(0)
+    color: $orangedeep
+  .responsive-nav.unfold a.download
+    background: inherit
+    color: white
+    margin-left: 0
+  .responsive-nav.unfold a.download:hover
+    color: $orangedeep
