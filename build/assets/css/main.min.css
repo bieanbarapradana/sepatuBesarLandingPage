@@ -331,11 +331,18 @@ hr {
   height: 0; }
 
 .main-nav {
-  display: flex; }
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+  transition: all 0.2s ease; }
+  .main-nav li.logo {
+    margin-right: auto;
+    padding: 10px 0; }
+    .main-nav li.logo a {
+      padding: 0; }
   .main-nav li {
-    list-style: none; }
-  .main-nav li:first-child {
-    margin-right: auto; }
+    list-style: none;
+    display: inline-block; }
   .main-nav a {
     color: white;
     display: block;
@@ -346,11 +353,45 @@ hr {
     transition: all 0.2s ease; }
   .main-nav a:hover, .main-nav a:active {
     color: #F87F43; }
+  .main-nav a.download {
+    background: white;
+    color: #00B2A5;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.4);
+    margin-left: 25px; }
 
-a.download {
-  background: white;
-  color: #00B2A5;
-  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.4); }
+li.nav-toggle {
+  display: none; }
+  li.nav-toggle a {
+    padding-right: 0; }
+
+@media screen and (max-width: 750px) {
+  li.nav-toggle {
+    display: block;
+    z-index: 100; }
+  .responsive-nav {
+    display: none; }
+  .responsive-nav.unfold {
+    display: block;
+    width: 100%;
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .responsive-nav.unfold li {
+    display: block; }
+  .responsive-nav.unfold a {
+    padding: 40px;
+    display: block;
+    text-align: center; }
+  .responsive-nav.unfold a:hover {
+    transform: translate(0);
+    color: #F87F43; }
+  .responsive-nav.unfold a.download {
+    background: inherit;
+    color: white;
+    margin-left: 0; }
+  .responsive-nav.unfold a.download:hover {
+    color: #F87F43; } }
 
 #brands ul {
   -webkit-filter: grayscale(100%);
